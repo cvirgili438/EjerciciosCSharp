@@ -28,7 +28,8 @@ namespace ConsoleApp3
                             Console.WriteLine(second);
                             return;
                         default:
-                            Console.WriteLine("Como son iguales, te tiro cualquiera los 2 :" + first + " y " + second);
+                            Console.WriteLine("Como son iguales, " +
+                                "te tiro cualquiera los 2 :" + first + " y " + second);
                             return;
                     }
 
