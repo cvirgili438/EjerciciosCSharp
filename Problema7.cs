@@ -97,8 +97,7 @@ namespace ConsoleApp3
                 }
                
             }
-            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
-            foreach (string str in strings) { Console.WriteLine($"viendo los str {str}"); }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }           
             
         return strings;
         }
