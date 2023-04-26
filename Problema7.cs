@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,7 +27,7 @@ namespace ConsoleApp3
                         InputNumbers();
                     }
                     else {
-                        int product= 1;
+                        BigInteger product= new BigInteger(1);
                         foreach (int number in returned) {
                             product=product * number;
                         }

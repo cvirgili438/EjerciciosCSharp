@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace ConsoleApp3
 {
@@ -18,8 +19,7 @@ namespace ConsoleApp3
                     string input = Console.ReadLine();
                     List<string> listString = Problema7.getListOfNumberStrings(input);
                     List<int> listInts = Problema7.ReturnedNumbers(listString);
-                    int max=0;
-                    
+                    BigInteger max=new BigInteger(0);                    
                     foreach (int i in listInts)
                     {
                         max += i;                       
