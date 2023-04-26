@@ -94,6 +94,12 @@ namespace ConsoleApp3
                         case(int)Choosed.Problema7:
                             Problema7 problema7 = new Problema7();
                             return;
+                        case (int)Choosed.Problema8:
+                            Problema8 problema8 = new Problema8();
+                            return;
+                        case (int)Choosed.Problema9:
+                            Problema9 problema9 = new Problema9();
+                            return;
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
                              ChooseProblem() ;
