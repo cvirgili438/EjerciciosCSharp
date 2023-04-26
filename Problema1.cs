@@ -40,15 +40,9 @@ namespace ConsoleApp3
                     Selected();
                 }
                 finally {
-                    Console.Write("Desea reiniciar el programa ? Y/N ");
-                    string response = Console.ReadLine();
-                    if (response.ToUpper() == "N")
-                    {
-                        Environment.Exit(0);
-                    }
-                    else {
+                  
                         Program.RestartApplication();
-                    }
+                    
                 }
             }
             Selected();

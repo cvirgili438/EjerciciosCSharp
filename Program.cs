@@ -73,6 +73,9 @@ namespace ConsoleApp3
                         case (int)Choosed.Problema2:                            
                             Problema2 problema2 = new Problema2(); 
                             return;
+                        case (int)Choosed.Problema3:
+                            Problema3 problema3 = new Problema3();
+                            return ;
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
                              ChooseProblem() ;
@@ -93,7 +96,17 @@ namespace ConsoleApp3
         }
         public static void RestartApplication()
         {
-            Main(new string[] { });
+            
+            Console.Write("Desea reiniciar el programa ? Y/N ");
+            string response = Console.ReadLine();
+            if (response.ToUpper() == "N")
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                Main(new string[] { });
+            }
         }
     }
 }
