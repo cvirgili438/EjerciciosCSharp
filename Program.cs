@@ -33,7 +33,7 @@ namespace ConsoleApp3
         static string Problem5 = "5)Utilizando un iterador escribir en pantalla " +
             "los números del 1 al 100 de dos en dos.";
         static string Problem6 = "6)Escribir un método que acepte un double que " +
-            "represente un número en grados Celcius y lotransforme a grados Fahrenheit.";
+            "represente un número en grados Celcius y lo transforme a grados Fahrenheit.";
         static string Problem7 = "7)Escribir un método que acepte una lista de" +
             " números y devuelva el producto de dichos números.";
         static string Problem8 = "8)Escribir un método que acepte un int y te" +
@@ -88,6 +88,10 @@ namespace ConsoleApp3
                         case (int)Choosed.Problema5:
                             Problema5 problema5 = new Problema5();
                             return;
+                        case (int)Choosed.Problema6:
+                            Problema6 problema6 = new Problema6(); 
+                            return;
+
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
                              ChooseProblem() ;
