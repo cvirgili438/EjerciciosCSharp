@@ -76,6 +76,9 @@ namespace ConsoleApp3
                         case (int)Choosed.Problema3:
                             Problema3 problema3 = new Problema3();
                             return ;
+                        case (int)Choosed.Problema4:
+                            Problema4 problema4= new Problema4();
+                            return;
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
                              ChooseProblem() ;
