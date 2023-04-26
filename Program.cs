@@ -12,6 +12,12 @@ namespace ConsoleApp3
         Problema2=2, 
         Problema3=3, 
         Problema4=4,
+        Problema5=5,
+        Problema6=6,
+        Problema7=7,
+        Problema8=8,
+        Problema9=9,
+        Problema10=10,
     }
     internal class Program
     {
@@ -78,6 +84,9 @@ namespace ConsoleApp3
                             return ;
                         case (int)Choosed.Problema4:
                             Problema4 problema4= new Problema4();
+                            return;
+                        case (int)Choosed.Problema5:
+                            Problema5 problema5 = new Problema5();
                             return;
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
