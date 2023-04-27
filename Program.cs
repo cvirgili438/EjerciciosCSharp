@@ -18,6 +18,7 @@ namespace ConsoleApp3
         Problema8=8,
         Problema9=9,
         Problema10=10,
+        Problema11=11,
     }
     internal class Program
     {
@@ -43,6 +44,7 @@ namespace ConsoleApp3
             " números y devuelva su promedio.";
         static string Problem10 = "10)Escribir un método que acepte una lista de " +
             "números y devuelva el número más grande.";
+        static string Problem11 = "11 ) Escribir un metodo que acepte 2 matrix 2 x 2 o 3 x 3 y las sume ";
 
 
         static void Main(string[] args)
@@ -62,7 +64,9 @@ namespace ConsoleApp3
                 Problem7,
                 Problem8,
                 Problem9,
-                Problem10};
+                Problem10,
+                Problem11
+            };
             foreach (string problem in Problems) {
                 Console.WriteLine(problem);
             }
@@ -102,6 +106,9 @@ namespace ConsoleApp3
                             return;
                         case (int)Choosed.Problema10:
                             Problema10 problema10 = new Problema10();
+                            return;
+                        case(int)Choosed.Problema11:
+                            Problema11 problema11 = new Problema11();
                             return;
                         default:
                             Console.WriteLine("El numero que eligió, no es un ejercicio valido, elija otro :");
